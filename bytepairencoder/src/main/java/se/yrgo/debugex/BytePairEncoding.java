@@ -181,7 +181,7 @@ public final class BytePairEncoding {
             }
         }
 
-        // we need at least two pairs for the encoding to be useful
-        return maxCount > 1 ? Optional.of(maxPair) : Optional.empty();
+        // we need at least three pairs for the encoding to be useful
+        return maxCount > 2 ? Optional.of(maxPair) : Optional.empty();
     }
 }
