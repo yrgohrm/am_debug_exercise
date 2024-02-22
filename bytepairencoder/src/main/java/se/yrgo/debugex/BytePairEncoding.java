@@ -73,7 +73,7 @@ public final class BytePairEncoding {
      */
     public static void decodeFile(Path input) throws IOException {
         final String filename = input.toString();
-        final Path output = input.getFileSystem().getPath(filename.substring(0, filename.length() - 4));
+        final Path output = input.getFileSystem().getPath("decoded-" + filename.substring(0, filename.length() - 4));
 
         try (InputStream file = Files.newInputStream(input)) {
             LookupTable lookupTable = LookupTable.read(file);
