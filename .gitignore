@@ -12,3 +12,6 @@ bin
 
 # Ignore intellij settings
 .idea
+
+# Ignore files compressed by the application
+*.bpe
